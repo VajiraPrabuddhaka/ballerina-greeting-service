@@ -7,9 +7,16 @@ type Response record {
     string message;
 };
 
-configurable string dbHost = "localhost";
+configurable DBConfig dbConfig = {
+    host: "localhost",
+    port: 3306
+};
 
-configurable int dbPort = 8090;
+type DBConfig record {
+    string host;
+    int port;
+    int poolSize?;
+};
 
 service / on new http:Listener(8090) {
     resource function get .(string name) returns Response {
