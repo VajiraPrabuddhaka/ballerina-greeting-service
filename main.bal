@@ -7,10 +7,7 @@ type Response record {
     string message;
 };
 
-configurable DBConfig dbConfig = {
-    host: "localhost",
-    port: 3306
-};
+configurable DBConfig dbConfig = ?;
 
 type DBConfig record {
     string host;
