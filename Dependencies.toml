@@ -284,8 +284,8 @@ modules = [
 ]
 
 [[package]]
-org = "lakshans"
-name = "bookservice"
+org = "vajiraprabuddhaka"
+name = "greetingservice"
 version = "0.1.0"
 dependencies = [
 	{org = "ballerina", name = "http"},
@@ -293,6 +293,6 @@ dependencies = [
 	{org = "ballerinai", name = "observe"}
 ]
 modules = [
-	{org = "lakshans", packageName = "bookservice", moduleName = "bookservice"}
+	{org = "vajiraprabuddhaka", packageName = "greetingservice", moduleName = "greetingservice"}
 ]
 
